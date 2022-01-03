@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react/cjs/react.development";
 import { AddTask } from "../../components/AddTask";
-import { TaskForm } from "../../components/TaskForm";
+import { TaskForm } from "../../components/AddTaskForm";
 import { TaskList } from "../../components/TaskList";
 import data from "../../resources/task.json";
 import "../../styles/home.css";

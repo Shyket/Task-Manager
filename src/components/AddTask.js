@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react/cjs/react.development";
-import { TaskForm } from "../components/TaskForm";
+import { AddTaskForm } from "./AddTaskForm";
 
 export const AddTask = ({taskList,setTaskList}) => {
   const [isNewTaskOpen, setIsNewTaskOpen] = useState(false);
@@ -13,7 +13,7 @@ export const AddTask = ({taskList,setTaskList}) => {
   return (
     <>
       {isNewTaskOpen ? (
-        <TaskForm addTask={addTask} taskName="" taskcategory="" />
+        <AddTaskForm addTask={addTask} />
       ) : (
         <button
           id="add-button"
