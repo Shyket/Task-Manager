@@ -1,0 +1,57 @@
+#header {
+  font-size: xx-large;
+  font-weight: 400;
+  margin-top: 1em;
+}
+
+ul#tasklist {
+  list-style-type: none;
+  margin: 2em 0 0.5em 0;
+  width: 30%;
+}
+
+ul#tasklist li .task-container {
+  margin: 1em;
+  width: 100%;
+  padding: 0.5em 0.5em;
+  border: 0.01em solid #b9b8b8;
+}
+
+ul#tasklist li .task-container p.task-name {
+  font-weight: 600;
+  font-size: larger;
+}
+
+ul#tasklist li .task-container p.task-category {
+  font-size: 0.8em;
+  margin: 0.5em 0;
+  color: #b9b8b8;
+}
+
+ul#tasklist li .task-container div.task-timer {
+  text-align: center;
+  font-size: xx-large;
+}
+
+ul#tasklist li .task-container div.task-timer button.timer-button {
+  margin-top: 2em;
+  width: 100%;
+  padding: 0.5em 1em;
+  background-color: white;
+  border: 0.01em #c9c9c9 solid;
+  cursor: pointer;
+}
+
+ul#tasklist li .task-container div.task-timer button.start-button {
+  color: greenyellow;
+}
+
+ul#tasklist li .task-container div.task-timer button.stop-button {
+  color: red;
+}
+
+button#add-button {
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+/*# sourceMappingURL=home.css.map */
