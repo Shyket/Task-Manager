@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react/cjs/react.development";
 import { TaskForm } from "./TaskForm";
 
-export const EditTaskForm = ({ taskName, taskCategory, updateTask, setEditTaskForm }) => {
+export const EditTaskForm = ({ taskName, taskCategory, updateTask, setIsEditing }) => {
   const [name, setName] = useState(taskName);
   const [category, setCategory] = useState(taskCategory);
 
@@ -22,7 +22,7 @@ export const EditTaskForm = ({ taskName, taskCategory, updateTask, setEditTaskFo
         >
           Update
         </button>
-        <button className="cancel-button" onClick={() => setEditTaskForm(false)}>
+        <button className="cancel-button" onClick={() => setIsEditing(false)}>
           Cancel
         </button>
       </div>

@@ -13,7 +13,7 @@ export const AddTask = ({taskList,setTaskList}) => {
   return (
     <>
       {isNewTaskOpen ? (
-        <AddTaskForm addTask={addTask} />
+        <AddTaskForm addTask={addTask} setIsNewTaskOpen={setIsNewTaskOpen} />
       ) : (
         <button
           id="add-button"

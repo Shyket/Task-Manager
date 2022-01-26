@@ -116,6 +116,8 @@
 
 #tasklist ul li .task-container div.task-timer button.stop-button {
   color: red;
+  font-weight: bold;
+  font-size: 0.5em;
 }
 
 #tasklist ul li .task-container div.task-timer button.stop-button:hover {

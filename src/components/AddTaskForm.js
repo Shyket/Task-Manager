@@ -4,18 +4,17 @@ import { TaskForm } from "./TaskForm";
 
 
 
-export const AddTaskForm = ({ addTask }) => {
-
+export const AddTaskForm = ({ addTask, setIsNewTaskOpen }) => {
   const [name, setName] = useState("");
   const [category, setCategory] = useState("");
 
   const createTask = () => {
-      let task = {};
-      task.name = name;
-      task.category = category;
-      task.time = 0;
-      addTask(task);
-  }
+    let task = {};
+    task.name = name;
+    task.category = category;
+    task.time = 0;
+    addTask(task);
+  };
 
   return (
     <div className="add-task-form">
@@ -26,8 +25,12 @@ export const AddTaskForm = ({ addTask }) => {
         setCategory={setCategory}
       />
       <div className="form-buttons">
-        <button id="create-task-button"onClick={() => createTask()}>Create</button>
-        <button  className="cancel-button">Cancel</button>
+        <button id="create-task-button" onClick={() => createTask()}>
+          Create
+        </button>
+        <button onClick={() => setIsNewTaskOpen(false)} className="cancel-button">
+          Cancel
+        </button>
       </div>
     </div>
   );
